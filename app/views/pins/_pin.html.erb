@@ -8,11 +8,11 @@
 			Posted by <%= pin.user.name %>
 		</strong>
 	</p>
-	<%= link_to 'Show', pin %>
+	<p>
+		<%= link_to 'Show', pin %>
 	  <% if current_user == pin.user %>
-		  <p>
-		  	<%= link_to 'Edit', edit_pin_path(pin) %>
-		  	<%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
-			</p>
-	  <% end %>
+		  <%= link_to 'Edit', edit_pin_path(pin) %>
+		  <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+  	<% end %>
+	</p>
 </div>
