@@ -13,6 +13,21 @@ body {
 }
 
 @import 'bootstrap-responsive';
+@media screen and (max-width: 480px) {
+
+	.hero-unit {
+		padding: 1em;
+		text-align: center;
+		h1 {
+			font-size: 2.5em;
+			margin-bottom: 0.3em;
+		}
+		.btn {
+			margin-top: 1em;
+		}
+	}
+
+}
 
 .navbar-inner {
 	@include box-shadow(none !important);
