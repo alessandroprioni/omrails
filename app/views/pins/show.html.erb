@@ -2,12 +2,12 @@
 	<div class="span6 offset3">
 		<div class="well">
 			<%= image_tag @pin.image %>
-			<p>
+			<p class="description">
 			  <%= @pin.description %>
 			</p>
 			<p>
 			  <strong>
-					Posted by <%= pin.user.name %>
+					Posted by <%= @pin.user.name %>
 				</strong>
 			</p>
 			<% if current_user == @pin.user %>
