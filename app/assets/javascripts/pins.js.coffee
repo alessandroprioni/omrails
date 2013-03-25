@@ -5,3 +5,5 @@
 jQuery ->
 	$('#pins').imagesLoaded ->
 		$('#pins').masonry itemSelector: ".box"
+	
+	$("#pins").addClass "centered" if $(window).width() <= 480

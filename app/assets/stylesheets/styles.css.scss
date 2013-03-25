@@ -15,6 +15,8 @@ body {
 @import 'bootstrap-responsive';
 @media screen and (max-width: 480px) {
 
+/* resize hero-unit for iPhone */
+
 	.hero-unit {
 		padding: 1em;
 		text-align: center;
@@ -25,6 +27,12 @@ body {
 		.btn {
 			margin-top: 1em;
 		}
+	}
+
+/* center image in pins#index for iPhone. http://masonry.desandro.com/demos/centered.html */
+
+	#pins {
+		margin: 0 auto;
 	}
 
 }
