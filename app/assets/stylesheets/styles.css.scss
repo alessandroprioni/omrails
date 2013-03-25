@@ -68,3 +68,10 @@ body {
 .description {
 	margin: 10px 0 5px;
 }
+
+/* Center the image in pin#view */
+
+.well img {
+	margin: auto;
+	display: block;
+}
