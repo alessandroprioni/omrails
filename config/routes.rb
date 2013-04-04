@@ -8,8 +8,7 @@ Omrails::Application.routes.draw do
   
   match "/about", to: "pages#about"
 
-  resources :profiles
-  #match "/profiles/:id", to: "profiles#show"
+  match "/profiles/:id", to: "profiles#show", as: :user
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

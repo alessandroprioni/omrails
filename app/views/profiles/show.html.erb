@@ -1,6 +1,9 @@
-<h3>
+<h1>
 	<%= @user.name.split(" ")[0] %>'s board
-</h3>
+</h1>
+
 <div id ="pins">
   <%= render @pins %>
 </div>
+
+<%= will_paginate @pins %>
